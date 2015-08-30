@@ -1,0 +1,53 @@
+﻿生成启动时间为 2012/8/8 星期三 下午 3:10:31。
+     1>项目“F:\fans'C++Project\FScript0.2\FScript0.2\lua5.21\lua5.21.vcxproj”在节点 2 上(build 个目标)。
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(299,5): warning MSB8004: Output 目录未以斜杠结尾。此生成实例将添加斜杠，因为必须有这个斜杠才能正确计算 Output 目录。
+     1>InitializeBuildStatus:
+         正在创建“Debug\lua5.21.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MT /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TC /analyze- /errorReport:prompt "lua-5.2.1\llex.c"
+         llex.c
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\Lib.exe /OUT:"F:\fans'C++Project\FScript0.2\FScript0.2\lua5.21\\Debug\lua5.21.lib" /NOLOGO Debug\lapi.obj
+         Debug\lauxlib.obj
+         Debug\lbaselib.obj
+         Debug\lbitlib.obj
+         Debug\lcode.obj
+         Debug\lcorolib.obj
+         Debug\lctype.obj
+         Debug\ldblib.obj
+         Debug\ldebug.obj
+         Debug\ldo.obj
+         Debug\ldump.obj
+         Debug\lfunc.obj
+         Debug\lgc.obj
+         Debug\linit.obj
+         Debug\liolib.obj
+         Debug\llex.obj
+         Debug\lmathlib.obj
+         Debug\lmem.obj
+         Debug\loadlib.obj
+         Debug\lobject.obj
+         Debug\lopcodes.obj
+         Debug\loslib.obj
+         Debug\lparser.obj
+         Debug\lstate.obj
+         Debug\lstring.obj
+         Debug\lstrlib.obj
+         Debug\ltable.obj
+         Debug\ltablib.obj
+         Debug\ltm.obj
+         Debug\lua.obj
+         Debug\luac.obj
+         Debug\lundump.obj
+         Debug\lvm.obj
+         Debug\lzio.obj
+     1>lua.obj : warning LNK4006: _main 已在 luac.obj 中定义；已忽略第二个定义
+         lua5.21.vcxproj -> F:\fans'C++Project\FScript0.2\FScript0.2\lua5.21\\Debug\lua5.21.lib
+       FinalizeBuildStatus:
+         正在删除文件“Debug\lua5.21.unsuccessfulbuild”。
+         正在对“Debug\lua5.21.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“F:\fans'C++Project\FScript0.2\FScript0.2\lua5.21\lua5.21.vcxproj”(build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:00.25

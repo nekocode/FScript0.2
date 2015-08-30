@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{CDE627EB-6228-4DFA-904E-4C15715A2D5E}</ProjectGuid>
+    <RootNamespace>FScript02</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ExecutablePath>$(ExecutablePath)</ExecutablePath>
+    <IncludePath>F:\boost_1_50_0;$(IncludePath)</IncludePath>
+    <LibraryPath>F:\boost_1_50_0\bin\vc10\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader>Create</PrecompiledHeader>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\fans%27C++Project\FScript0.2\FScript0.2\charexchange.cpp" />
+    <ClCompile Include="..\..\..\fans%27C++Project\FScript0.2\FScript0.2\dllfun.cpp" />
+    <ClCompile Include="..\..\..\fans%27C++Project\FScript0.2\FScript0.2\music.cpp" />
+    <ClCompile Include="ResManager.cpp" />
+    <ClCompile Include="..\..\..\fans%27C++Project\FScript0.2\FScript0.2\UI_Interface.cpp" />
+    <ClCompile Include="msg.cpp" />
+    <ClCompile Include="..\..\..\fans%27C++Project\FScript0.2\FScript0.2\gameMain.cpp" />
+    <ClCompile Include="..\..\..\fans%27C++Project\FScript0.2\FScript0.2\luawrapper\LuaContext.cpp" />
+    <ClCompile Include="..\..\..\fans%27C++Project\FScript0.2\FScript0.2\script.cpp" />
+    <ClCompile Include="command.cpp" />
+    <ClCompile Include="..\..\..\fans%27C++Project\FScript0.2\FScript0.2\StdAfx.cpp" />
+    <ClCompile Include="..\..\..\fans%27C++Project\FScript0.2\FScript0.2\win.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\fans%27C++Project\FScript0.2\FScript0.2\charexchange.h" />
+    <ClInclude Include="..\..\..\fans%27C++Project\FScript0.2\FScript0.2\dllfun.h" />
+    <ClInclude Include="..\..\..\fans%27C++Project\FScript0.2\FScript0.2\libzplay\libzplay.h" />
+    <ClInclude Include="..\..\..\fans%27C++Project\FScript0.2\FScript0.2\music.h" />
+    <ClInclude Include="ResManager.h" />
+    <ClInclude Include="..\..\..\fans%27C++Project\FScript0.2\FScript0.2\UI_Interface.h" />
+    <ClInclude Include="msg.h" />
+    <ClInclude Include="..\..\..\fans%27C++Project\FScript0.2\FScript0.2\gameMain.h" />
+    <ClInclude Include="..\..\..\fans%27C++Project\FScript0.2\FScript0.2\luawrapper\LuaContext.h" />
+    <ClInclude Include="..\..\..\fans%27C++Project\FScript0.2\FScript0.2\script.h" />
+    <ClInclude Include="..\..\..\fans%27C++Project\FScript0.2\FScript0.2\StdAfx.h" />
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="RES.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

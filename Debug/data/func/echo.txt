@@ -1,0 +1,31 @@
+setechospeed(35);
+
+--------回调函数,遇到显示文字时宿主程序会调用_echo函数,echo时的暂停会调用_echo_stop--------
+inecho = false;
+function _echo(has_rolename)
+	if inecho==false then
+		for i=0,255,5 do
+			echoimg:setalpha(i);
+			sleep(sleeptime);
+		end
+	end
+	inecho = true;
+end
+function _echo_stop()
+	echonext:setframe(1);
+	echonext:setalpha(255);
+	stop();
+	echonext:setalpha(0);
+end
+
+function clecho()
+	if inecho==true then
+		echo:settext("");
+		rolename:settext("");
+		for i=255,0,-5 do
+			echoimg:setalpha(i);
+			sleep(sleeptime);
+		end
+	end
+	inecho = false;
+end

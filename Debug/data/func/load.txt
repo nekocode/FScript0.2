@@ -1,0 +1,24 @@
+loadimg("pic\\echo.png",false,"echoimg");
+loadimg("pic\\1.png",false,"ñ·");
+loadimg("pic\\cg01_03m.png",false,"°ËÑ°");
+loadimg("pic\\b05b.jpg",false,"b1");
+loadimg("pic\\b13a.jpg",false,"b2");
+
+loadaimg("pic\\next.png",16,1,"echonext")
+
+-----------echo±³¾°Í¼Æ¬---------
+addimg("echoimg","echoimg");
+addimg("role3","");
+addimg("tmpimg","");
+addimg("tmpimg2","");
+addaimg("echonext","echonext",1)
+fowardinsert("echo","echoimg");
+
+echo:setpos(35,450);
+rolename:setpos(50,425);
+echoimg:setpos(0,350);
+echonext:setpos(705,540);
+echonext:setdelay(3);
+
+nextimg = {fadestep = 5,  x = 0,  y = 0,  width = 0,  height = 0,  alpha = 255};
+sleeptime = 10;

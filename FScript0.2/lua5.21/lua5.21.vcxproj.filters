@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="源文件\语法分析">
+      <UniqueIdentifier>{25a0dce4-f536-4171-afa6-051dee58b121}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Other">
+      <UniqueIdentifier>{73ef2165-72ba-46e7-8c75-99237ae5878f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="lua-5.2.1\lzio.h">
+      <Filter>源文件\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="lua-5.2.1\lauxlib.h">
+      <Filter>源文件\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="lua-5.2.1\lcode.h">
+      <Filter>源文件\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="lua-5.2.1\lctype.h">
+      <Filter>源文件\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="lua-5.2.1\ldebug.h">
+      <Filter>源文件\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="lua-5.2.1\ldo.h">
+      <Filter>源文件\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="lua-5.2.1\lfunc.h">
+      <Filter>源文件\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="lua-5.2.1\lgc.h">
+      <Filter>源文件\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="lua-5.2.1\llimits.h">
+      <Filter>源文件\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="lua-5.2.1\lmem.h">
+      <Filter>源文件\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="lua-5.2.1\lobject.h">
+      <Filter>源文件\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="lua-5.2.1\lopcodes.h">
+      <Filter>源文件\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="lua-5.2.1\lparser.h">
+      <Filter>源文件\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="lua-5.2.1\lstate.h">
+      <Filter>源文件\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="lua-5.2.1\lstring.h">
+      <Filter>源文件\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="lua-5.2.1\ltable.h">
+      <Filter>源文件\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="lua-5.2.1\ltm.h">
+      <Filter>源文件\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="lua-5.2.1\lua.hpp">
+      <Filter>源文件\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="lua-5.2.1\luaconf.h">
+      <Filter>源文件\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="lua-5.2.1\lualib.h">
+      <Filter>源文件\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="lua-5.2.1\lundump.h">
+      <Filter>源文件\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="lua-5.2.1\lvm.h">
+      <Filter>源文件\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="lua-5.2.1\lapi.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lua-5.2.1\llex.h">
+      <Filter>源文件\语法分析</Filter>
+    </ClInclude>
+    <ClInclude Include="lua-5.2.1\lua.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="lua-5.2.1\lauxlib.c">
+      <Filter>源文件\Other</Filter>
+    </ClCompile>
+    <ClCompile Include="lua-5.2.1\lbaselib.c">
+      <Filter>源文件\Other</Filter>
+    </ClCompile>
+    <ClCompile Include="lua-5.2.1\lbitlib.c">
+      <Filter>源文件\Other</Filter>
+    </ClCompile>
+    <ClCompile Include="lua-5.2.1\lcode.c">
+      <Filter>源文件\Other</Filter>
+    </ClCompile>
+    <ClCompile Include="lua-5.2.1\lcorolib.c">
+      <Filter>源文件\Other</Filter>
+    </ClCompile>
+    <ClCompile Include="lua-5.2.1\lctype.c">
+      <Filter>源文件\Other</Filter>
+    </ClCompile>
+    <ClCompile Include="lua-5.2.1\ldblib.c">
+      <Filter>源文件\Other</Filter>
+    </ClCompile>
+    <ClCompile Include="lua-5.2.1\ldebug.c">
+      <Filter>源文件\Other</Filter>
+    </ClCompile>
+    <ClCompile Include="lua-5.2.1\ldo.c">
+      <Filter>源文件\Other</Filter>
+    </ClCompile>
+    <ClCompile Include="lua-5.2.1\ldump.c">
+      <Filter>源文件\Other</Filter>
+    </ClCompile>
+    <ClCompile Include="lua-5.2.1\lfunc.c">
+      <Filter>源文件\Other</Filter>
+    </ClCompile>
+    <ClCompile Include="lua-5.2.1\lgc.c">
+      <Filter>源文件\Other</Filter>
+    </ClCompile>
+    <ClCompile Include="lua-5.2.1\linit.c">
+      <Filter>源文件\Other</Filter>
+    </ClCompile>
+    <ClCompile Include="lua-5.2.1\liolib.c">
+      <Filter>源文件\Other</Filter>
+    </ClCompile>
+    <ClCompile Include="lua-5.2.1\lmathlib.c">
+      <Filter>源文件\Other</Filter>
+    </ClCompile>
+    <ClCompile Include="lua-5.2.1\lmem.c">
+      <Filter>源文件\Other</Filter>
+    </ClCompile>
+    <ClCompile Include="lua-5.2.1\loadlib.c">
+      <Filter>源文件\Other</Filter>
+    </ClCompile>
+    <ClCompile Include="lua-5.2.1\lobject.c">
+      <Filter>源文件\Other</Filter>
+    </ClCompile>
+    <ClCompile Include="lua-5.2.1\lopcodes.c">
+      <Filter>源文件\Other</Filter>
+    </ClCompile>
+    <ClCompile Include="lua-5.2.1\loslib.c">
+      <Filter>源文件\Other</Filter>
+    </ClCompile>
+    <ClCompile Include="lua-5.2.1\lparser.c">
+      <Filter>源文件\Other</Filter>
+    </ClCompile>
+    <ClCompile Include="lua-5.2.1\lstate.c">
+      <Filter>源文件\Other</Filter>
+    </ClCompile>
+    <ClCompile Include="lua-5.2.1\lstring.c">
+      <Filter>源文件\Other</Filter>
+    </ClCompile>
+    <ClCompile Include="lua-5.2.1\lstrlib.c">
+      <Filter>源文件\Other</Filter>
+    </ClCompile>
+    <ClCompile Include="lua-5.2.1\ltable.c">
+      <Filter>源文件\Other</Filter>
+    </ClCompile>
+    <ClCompile Include="lua-5.2.1\ltablib.c">
+      <Filter>源文件\Other</Filter>
+    </ClCompile>
+    <ClCompile Include="lua-5.2.1\ltm.c">
+      <Filter>源文件\Other</Filter>
+    </ClCompile>
+    <ClCompile Include="lua-5.2.1\luac.c">
+      <Filter>源文件\Other</Filter>
+    </ClCompile>
+    <ClCompile Include="lua-5.2.1\lundump.c">
+      <Filter>源文件\Other</Filter>
+    </ClCompile>
+    <ClCompile Include="lua-5.2.1\lvm.c">
+      <Filter>源文件\Other</Filter>
+    </ClCompile>
+    <ClCompile Include="lua-5.2.1\lzio.c">
+      <Filter>源文件\Other</Filter>
+    </ClCompile>
+    <ClCompile Include="lua-5.2.1\lapi.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lua-5.2.1\llex.c">
+      <Filter>源文件\语法分析</Filter>
+    </ClCompile>
+    <ClCompile Include="lua-5.2.1\lua.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

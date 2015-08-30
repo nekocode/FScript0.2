@@ -1,0 +1,37 @@
+LIBRARY "DX9Draw"
+
+EXPORTS
+	_InitD3D
+	_ReleaseD3D
+	_Render
+
+	_addimg
+	_addaimg
+	_addtext
+
+	_delete
+	_exchange
+	_fowardinsert
+	_getsequence
+
+	_fadeimg
+	_setfademap
+
+	_loadimgfromfile
+	_loadimgfrommem
+
+	_loadaimgfromfile
+	_loadaimgfrommem
+	_loadaimgfromimgs
+
+	_test
+
+	_bindbtn
+	_setbtn_enable
+	_setbtn_callbackfunc
+	_refresh_allmap
+	_refresh_btnmap
+	_setmousepos
+	_setmouseclick
+
+	_setcur

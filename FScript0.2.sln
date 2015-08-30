@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FScript0.2", "FScript0.2\FScript0.2.vcxproj", "{CDE627EB-6228-4DFA-904E-4C15715A2D5E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DX9Draw", "DX9Draw\DX9Draw.vcxproj", "{8CD74E4A-8B12-4404-BFB4-AB41F0FC8221}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FSFilePack", "FSFilePack\FSFilePack.vcxproj", "{AF83D71E-AB1C-4CB9-92A5-D3DB0AD51AB0}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "lua5.21", "FScript0.2\lua5.21\lua5.21.vcxproj", "{68BAB453-DA7A-4093-845F-FB948D4D4D17}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CDE627EB-6228-4DFA-904E-4C15715A2D5E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{CDE627EB-6228-4DFA-904E-4C15715A2D5E}.Debug|Win32.Build.0 = Debug|Win32
+		{CDE627EB-6228-4DFA-904E-4C15715A2D5E}.Release|Win32.ActiveCfg = Release|Win32
+		{CDE627EB-6228-4DFA-904E-4C15715A2D5E}.Release|Win32.Build.0 = Release|Win32
+		{8CD74E4A-8B12-4404-BFB4-AB41F0FC8221}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8CD74E4A-8B12-4404-BFB4-AB41F0FC8221}.Debug|Win32.Build.0 = Debug|Win32
+		{8CD74E4A-8B12-4404-BFB4-AB41F0FC8221}.Release|Win32.ActiveCfg = Release|Win32
+		{8CD74E4A-8B12-4404-BFB4-AB41F0FC8221}.Release|Win32.Build.0 = Release|Win32
+		{AF83D71E-AB1C-4CB9-92A5-D3DB0AD51AB0}.Debug|Win32.ActiveCfg = Debug|Win32
+		{AF83D71E-AB1C-4CB9-92A5-D3DB0AD51AB0}.Debug|Win32.Build.0 = Debug|Win32
+		{AF83D71E-AB1C-4CB9-92A5-D3DB0AD51AB0}.Release|Win32.ActiveCfg = Release|Win32
+		{AF83D71E-AB1C-4CB9-92A5-D3DB0AD51AB0}.Release|Win32.Build.0 = Release|Win32
+		{68BAB453-DA7A-4093-845F-FB948D4D4D17}.Debug|Win32.ActiveCfg = Debug|Win32
+		{68BAB453-DA7A-4093-845F-FB948D4D4D17}.Debug|Win32.Build.0 = Debug|Win32
+		{68BAB453-DA7A-4093-845F-FB948D4D4D17}.Release|Win32.ActiveCfg = Release|Win32
+		{68BAB453-DA7A-4093-845F-FB948D4D4D17}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

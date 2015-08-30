@@ -1,0 +1,107 @@
+hasrole1 = false;
+hasrole2 = false;
+function rl(name1,name2)
+	--利用tmpimg来获取第一个立绘应该在屏幕上绘制的坐标
+	tmpimg:setimg(name1);
+	local x = 400 - math.floor(tmpimg:width()/2);
+	local y = 600 - tmpimg:height();
+
+	if name2==nil then
+		if hasrole1==true then
+			if hasrole2==false then
+				nextimg.x = x; nextimg.y = y;
+				role1:fadeimg(name1);
+				while role1:ischanging() do
+					sleep(sleeptime);
+				end
+			else
+				tmpimg:setpos(x,y);
+				for i=255,0,-5 do
+					role1:setalpha(i);
+					role2:setalpha(i);
+					tmpimg:setalpha(255-i);
+					sleep(sleeptime);
+				end
+				role1:setimg(name1);
+				role1:setpos(x,y);
+				role1:setalpha(255);
+				tmpimg:setalpha(0);
+			end
+		else
+			role1:setimg(name1);
+			role1:setpos(x,y);
+			for i=0,255,5 do
+				role1:setalpha(i);
+				sleep(sleeptime);
+			end
+		end
+		hasrole1 = true; hasrole2 = false;
+	else
+		x = x - 170;
+		--利用tmpimg2来获取第二个立绘应该在屏幕上绘制的坐标
+		tmpimg2:setimg(name2);
+		local x2 = 400 - math.floor(tmpimg2:width()/2) + 170;
+		local y2 = 600 - tmpimg2:height();
+
+		if hasrole1==true then
+			if hasrole2==true then
+				--上一状态是两个立绘都有
+				nextimg.x = x; nextimg.y = y;
+				role1:fadeimg(name1);
+				nextimg.x = x2; nextimg.y = y2;
+				role2:fadeimg(name2);
+				while role2:ischanging()==true and role1:ischanging()==true do
+					sleep(sleeptime);
+				end
+			else
+				--上一状态是只有立绘1没有立绘2(1->2)
+				role2:setimg(name2);
+				tmpimg:setpos(x,y);
+				role2:setpos(x2,y2);
+				fowardinsert("role2","tmpimg");
+				for i=0,255,5 do
+					role2:setalpha(i);
+					tmpimg:setalpha(i);
+					role1:setalpha(255-i);
+					sleep(sleeptime);
+				end
+				role1:setimg(name1);
+				role1:setpos(x,y);
+				role1:setalpha(255);
+				tmpimg:setalpha(0);
+				fowardinsert("tmpimg2","tmpimg");
+			end
+		else
+			--上一状态是两个立绘都没有
+			role1:setimg(name1);
+			role2:setimg(name2);
+			role1:setpos(x,y);
+			role2:setpos(x2,y2);
+			for i=0,255,5 do
+				role2:setalpha(i);
+				role1:setalpha(i);
+				sleep(sleeptime);
+			end
+		end
+		
+		hasrole1 = true; hasrole2 = true;
+	end
+end
+
+function clrl()
+	if hasrole1 == true then
+		if hasrole2 == flase then
+			for i=255,0,-5 do
+				role1:setalpha(i);
+				sleep(sleeptime);
+			end
+		else
+			for i=255,0,-5 do
+				role2:setalpha(i);
+				role1:setalpha(i);
+				sleep(sleeptime);
+			end		
+		end
+	end
+	hasrole1 = false; hasrole2 = false;
+end

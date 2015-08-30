@@ -1,0 +1,114 @@
+float alpha,alpha_old,alpha_new;
+float type;
+
+// 纹理对象
+texture Tex0;
+texture Tex1;
+texture Tex2;
+
+// 纹理采样器
+sampler Samp0 = sampler_state
+{
+	Texture = <Tex0>;
+	MIPFILTER = LINEAR;
+	MINFILTER = LINEAR;
+	MAGFILTER = LINEAR;
+};
+
+sampler Samp1 = sampler_state
+{
+	Texture = <Tex1>;
+	MIPFILTER = LINEAR;
+	MINFILTER = LINEAR;
+	MAGFILTER = LINEAR;
+};
+
+sampler Samp2 = sampler_state
+{
+	Texture = <Tex2>;
+	MIPFILTER = LINEAR;
+	MINFILTER = LINEAR;
+	MAGFILTER = LINEAR;
+};
+
+
+// 输入结构
+struct PS_INPUT
+{
+	float2 uvCoords0 : TEXCOORD0;
+	float2 uvCoords1 : TEXCOORD1;
+	float2 uvCoords2 : TEXCOORD2;
+};
+
+
+float4 effect(PS_INPUT input) : COLOR
+{
+	float4 texcolor = tex2D(Samp0, input.uvCoords0);
+	float4 texcolor2 = tex2D(Samp1, input.uvCoords1);
+	float4 mapcolor = tex2D(Samp2, input.uvCoords2);
+	texcolor.a = texcolor.a * alpha_old;
+	texcolor2.a = texcolor2.a * alpha_new;
+
+	if(type == 0.0)	//没有过度map
+	{
+		if(texcolor.a == 0.0 &&texcolor2.a == 0.0)
+		{
+			texcolor.a = 0.0;
+		}
+		else if(texcolor.a != 0.0 &&texcolor2.a == 0.0)
+		{
+			texcolor.a = texcolor.a * (1.0-alpha);
+		}
+		else if(texcolor2.a != 0.0 &&texcolor.a == 0.0)
+		{
+			texcolor.a = texcolor2.a * alpha;
+			texcolor.r = texcolor2.r;
+			texcolor.g = texcolor2.g;
+			texcolor.b = texcolor2.b;
+		}
+		else
+		{
+			texcolor.a = texcolor2.a * alpha + texcolor.a * (1.0 - alpha);
+			texcolor.r = texcolor2.r * alpha + texcolor.r * (1.0 - alpha);
+			texcolor.g = texcolor2.g * alpha + texcolor.g * (1.0 - alpha);
+			texcolor.b = texcolor2.b * alpha + texcolor.b * (1.0 - alpha);
+		}
+	}
+	else		//有过度map
+	{
+		if(mapcolor.r < (alpha-0.05))
+		{
+			texcolor = texcolor2;
+		}
+		else if((mapcolor.r > (alpha-0.05)) &&(mapcolor.r < (alpha+0.05)))
+		{
+
+			float mapalpha = (mapcolor.r - (alpha-0.05))/0.10;
+
+			if(texcolor.a == 0.0 &&texcolor2.a == 0.0)
+			{
+				texcolor.a = 0.0;
+			}
+			else if(texcolor.a != 0.0 &&texcolor2.a == 0.0)
+			{
+				texcolor.a = texcolor.a * mapalpha;
+			}
+			else if(texcolor2.a != 0.0 &&texcolor.a == 0.0)
+			{
+				texcolor.a = texcolor2.a * (1.0-mapalpha);
+				texcolor.r = texcolor2.r;
+				texcolor.g = texcolor2.g;
+				texcolor.b = texcolor2.b;
+			}
+			else
+			{
+				texcolor.a = texcolor2.a * (1.0 - mapalpha) + texcolor.a * mapalpha;
+				texcolor.r = texcolor2.r * (1.0 - mapalpha) + texcolor.r * mapalpha;
+				texcolor.g = texcolor2.g * (1.0 - mapalpha) + texcolor.g * mapalpha;
+				texcolor.b = texcolor2.b * (1.0 - mapalpha) + texcolor.b * mapalpha;
+			}
+		}
+	}
+
+	return texcolor;
+}

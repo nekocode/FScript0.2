@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="头文件\其他">
+      <UniqueIdentifier>{0116b114-34d3-4fc8-9116-6e16a022f7b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\其他">
+      <UniqueIdentifier>{0a989ca1-c4c0-4ec1-b076-a3038c1f1493}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\脚本控制">
+      <UniqueIdentifier>{b0eb3050-d40f-409c-bc9f-6ed8c7fbb385}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\脚本控制">
+      <UniqueIdentifier>{f42b2ba7-4304-4569-943e-80361d48efbb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\消息处理">
+      <UniqueIdentifier>{d761396a-5263-4828-b4aa-9078fd558f20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\消息处理">
+      <UniqueIdentifier>{a31476a2-47e5-475e-9cdc-2164df37b09a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\音乐控制">
+      <UniqueIdentifier>{c6dbda86-fa13-434a-b681-1d6c70a6ffa2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\音乐控制">
+      <UniqueIdentifier>{a20e2027-f49e-4561-9d47-b09913913ba2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\脚本控制\lua">
+      <UniqueIdentifier>{3f896488-bb47-48d0-8c21-e0a4a3214322}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\脚本控制\lua">
+      <UniqueIdentifier>{8cd7cc4f-47a0-4122-b881-3ee9e9328a18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\其他\字符串转换">
+      <UniqueIdentifier>{69ac210b-ee0d-4d29-8347-a299a7aabd60}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\其他\字符串转换">
+      <UniqueIdentifier>{6f04133d-bf68-4ce5-8514-a5363f21004c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\dll入口">
+      <UniqueIdentifier>{9a111a83-d8de-45a0-a71f-38b58aa6ea28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\dll入口">
+      <UniqueIdentifier>{bac0a1b8-47ed-4f04-8090-c461fdc9e4ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\脚本控制\主UI">
+      <UniqueIdentifier>{f0db3d45-198d-4202-898d-b0fbb9e110b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\脚本控制\主UI">
+      <UniqueIdentifier>{fd69754b-c01c-4897-8f62-5a1b41c3e674}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\资源管理">
+      <UniqueIdentifier>{919111ff-e6dc-4256-9ab6-0dc17b92e8cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\资源管理">
+      <UniqueIdentifier>{61a55645-503c-497e-8613-507d9394b10a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\fans%27C++Project\FScript0.2\FScript0.2\win.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\fans%27C++Project\FScript0.2\FScript0.2\gameMain.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\fans%27C++Project\FScript0.2\FScript0.2\StdAfx.cpp">
+      <Filter>源文件\其他</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\fans%27C++Project\FScript0.2\FScript0.2\script.cpp">
+      <Filter>源文件\脚本控制</Filter>
+    </ClCompile>
+    <ClCompile Include="msg.cpp">
+      <Filter>源文件\消息处理</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\fans%27C++Project\FScript0.2\FScript0.2\music.cpp">
+      <Filter>源文件\音乐控制</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\fans%27C++Project\FScript0.2\FScript0.2\luawrapper\LuaContext.cpp">
+      <Filter>源文件\脚本控制\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="command.cpp">
+      <Filter>源文件\脚本控制</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\fans%27C++Project\FScript0.2\FScript0.2\charexchange.cpp">
+      <Filter>源文件\其他\字符串转换</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\fans%27C++Project\FScript0.2\FScript0.2\dllfun.cpp">
+      <Filter>源文件\dll入口</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\fans%27C++Project\FScript0.2\FScript0.2\UI_Interface.cpp">
+      <Filter>源文件\脚本控制\主UI</Filter>
+    </ClCompile>
+    <ClCompile Include="ResManager.cpp">
+      <Filter>源文件\资源管理</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\fans%27C++Project\FScript0.2\FScript0.2\gameMain.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>头文件\其他</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\fans%27C++Project\FScript0.2\FScript0.2\StdAfx.h">
+      <Filter>头文件\其他</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\fans%27C++Project\FScript0.2\FScript0.2\script.h">
+      <Filter>头文件\脚本控制</Filter>
+    </ClInclude>
+    <ClInclude Include="msg.h">
+      <Filter>头文件\消息处理</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\fans%27C++Project\FScript0.2\FScript0.2\libzplay\libzplay.h">
+      <Filter>头文件\音乐控制</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\fans%27C++Project\FScript0.2\FScript0.2\music.h">
+      <Filter>头文件\音乐控制</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\fans%27C++Project\FScript0.2\FScript0.2\luawrapper\LuaContext.h">
+      <Filter>头文件\脚本控制\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\fans%27C++Project\FScript0.2\FScript0.2\charexchange.h">
+      <Filter>头文件\其他\字符串转换</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\fans%27C++Project\FScript0.2\FScript0.2\dllfun.h">
+      <Filter>头文件\dll入口</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\fans%27C++Project\FScript0.2\FScript0.2\UI_Interface.h">
+      <Filter>头文件\脚本控制\主UI</Filter>
+    </ClInclude>
+    <ClInclude Include="ResManager.h">
+      <Filter>头文件\资源管理</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="RES.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,1 @@
+char* wctoc(wchar_t* pwszUnicode);

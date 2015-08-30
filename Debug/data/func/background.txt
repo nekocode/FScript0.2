@@ -1,0 +1,28 @@
+hasbk = false;
+function bk(name)
+	if hasbk==false then
+		background:setimg(name);
+		for i=0,255,5 do
+			background:setalpha(i);
+			sleep(sleeptime);
+		end
+		hasbk = true;
+	else
+		nextimg.x = 0; nextimg.y = 0;
+		background:fadeimg(name);
+		while background:ischanging() do
+			sleep(sleeptime);
+		end
+	end
+end
+
+function clbk()
+	if hasbk==true then
+		for i=255,0,-5 do
+			background:setalpha(i);
+			sleep(sleeptime);
+		end
+		background:setimg("");
+	end
+	hasbk = false;
+end

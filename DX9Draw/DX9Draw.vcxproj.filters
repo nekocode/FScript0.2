@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="头文件\其他">
+      <UniqueIdentifier>{412f765b-0af9-4f26-9209-558bd0d4f2b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\其他">
+      <UniqueIdentifier>{3474be84-ba52-49c5-8e1a-edecabe87c43}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\图片模块">
+      <UniqueIdentifier>{6bcfef6b-2098-4401-8296-ce9b6ef0e007}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\文字模块">
+      <UniqueIdentifier>{1a461a31-32ef-472c-b1fe-81dde23f04d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\图片模块">
+      <UniqueIdentifier>{68908f8c-fcaf-4ffc-879c-f7937127d230}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\文字模块">
+      <UniqueIdentifier>{f4dbe685-8818-4b20-8ee6-0951bdd22188}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\输出">
+      <UniqueIdentifier>{83dda27e-3fb4-4884-b895-0c7040d69c56}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\输出">
+      <UniqueIdentifier>{03f14c4c-d4b9-45db-8eac-ba4dff0b2969}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="dllDef.def" />
+    <None Include="..\..\..\fans%27C++Project\FScript0.2\DX9Draw\effect.txt">
+      <Filter>资源文件</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DX9Draw.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件\其他</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件\其他</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\fans%27C++Project\FScript0.2\DX9Draw\FreeTypeLib.h">
+      <Filter>头文件\文字模块</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>资源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\fans%27C++Project\FScript0.2\DX9Draw\out_control.h">
+      <Filter>头文件\输出</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\fans%27C++Project\FScript0.2\DX9Draw\timetest.h">
+      <Filter>头文件\其他</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\fans%27C++Project\FScript0.2\DX9Draw\fImage.h">
+      <Filter>头文件\图片模块</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\fans%27C++Project\FScript0.2\DX9Draw\ftext.h">
+      <Filter>头文件\文字模块</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DX9Draw.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件\其他</Filter>
+    </ClCompile>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>源文件\其他</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\fans%27C++Project\FScript0.2\DX9Draw\FreeTypeLib.cpp">
+      <Filter>源文件\文字模块</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\fans%27C++Project\FScript0.2\DX9Draw\out_control.cpp">
+      <Filter>源文件\输出</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\fans%27C++Project\FScript0.2\DX9Draw\timetest.cpp">
+      <Filter>源文件\其他</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\fans%27C++Project\FScript0.2\DX9Draw\fImage.cpp">
+      <Filter>源文件\图片模块</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\fans%27C++Project\FScript0.2\DX9Draw\ftext.cpp">
+      <Filter>源文件\文字模块</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="rec.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
